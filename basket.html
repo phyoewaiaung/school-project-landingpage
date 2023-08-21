@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x" href="images/name.png">
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="RCC.css" />
+    
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="sticky">
+      <header>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="furniture.html">Furniture</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="review.html">Reviews</a></li>
+          </ul>
+        </nav>
+        <input class="search-bar" type="text" >
+        <img src="images/search.png" class="search-img" alt="">
+        <a href="basket.html"
+          ><img
+            class="shopping-cart"
+            src="images/shopping-cart.png"
+            width="40px"
+            height="40px"
+            alt=""
+        /></a>
+      </header>
+      <a href="#openModal">
+        <img class="login" src="images/login.png" width="40px" height="40px" />
+      </a>
+    </div>
+    <!-- modalDialog -->
+    <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+
+        <form action="#" method="post">
+          <h3 class="text-center">Login Form</h3>
+          <hr />
+          <br />
+          <div class="form-group">
+            <label for="username">Email:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <a href="#">Forget Password?</a>
+          <br /><br />
+          <div class="form-group">
+            <button type="submit">Login</button>
+          </div>
+          <p class="text-center">
+            Not yet a member?
+            <span class="color-create">Create An Account! </span>
+          </p>
+        </form>
+      </div>
+    </div>
+    <main class="bg">
+      <div class="equipment-container">
+        <h1 class="text-center animate__animated animate__fadeInLeft padding-t">
+          Your Cart ( 5 Items)
+        </h1>
+        <div class="overflow">
+          <table>
+            <thead>
+              <th width="400">Item</th>
+              <th width="130">Price</th>
+              <th width="160">Quantity</th>
+              <th width="160">Total</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="selected-item">
+                    <div class="item-margin-right">
+                      <img
+                        src="images/furniture1.jpg"
+                        width="100px"
+                        height="100px"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p>Camping Chair</p>
+                    </div>
+                  </div>
+                </td>
+                <td>$14.99</td>
+                <td>
+                  <div class="quantity">
+                    <button class="btn" onclick="decreaseQuantity()">-</button>
+                    <input type="number" id="quantityInput" value="1" />
+                    <button class="btn" onclick="increaseQuantity()">+</button>
+                  </div>
+                </td>
+                <td>$14.99</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="selected-item">
+                    <div class="item-margin-right">
+                      <img
+                        src="images/offer-page2.jpg"
+                        width="100px"
+                        height="100px"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p>Camping Tent</p>
+                    </div>
+                  </div>
+                </td>
+                <td>$45.38</td>
+                <td>
+                  <div class="quantity">
+                    <button class="btn" onclick="decreaseQuantity()">-</button>
+                    <input type="number" id="quantityInput" value="1" />
+                    <button class="btn" onclick="increaseQuantity()">+</button>
+                  </div>
+                </td>
+                <td>$45.38</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="selected-item">
+                    <div class="item-margin-right">
+                      <img
+                        src="images/furniture5.jpg"
+                        width="100px"
+                        height="100px"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p>Camping Table</p>
+                    </div>
+                  </div>
+                </td>
+                <td>$11.65</td>
+                <td>
+                  <div class="quantity">
+                    <button class="btn" onclick="decreaseQuantity()">-</button>
+                    <input type="number" id="quantityInput" value="1" />
+                    <button class="btn" onclick="increaseQuantity()">+</button>
+                  </div>
+                </td>
+                <td>$11.65</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="selected-item">
+                    <div class="item-margin-right">
+                      <img
+                        src="images/Rope.jpeg"
+                        width="100px"
+                        height="100px"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p>Rope</p>
+                    </div>
+                  </div>
+                </td>
+                <td>$4.39</td>
+                <td>
+                  <div class="quantity">
+                    <button class="btn" onclick="decreaseQuantity()">-</button>
+                    <input type="number" id="quantityInput" value="1" />
+                    <button class="btn" onclick="increaseQuantity()">+</button>
+                  </div>
+                </td>
+                <td>$4.39</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="selected-item">
+                    <div class="item-margin-right">
+                      <img
+                        src="images/offer-page4.jpg"
+                        width="100px"
+                        height="100px"
+                        alt=""
+                      />
+                    </div>
+                    <div>
+                      <p>Camping Sleeping Bed</p>
+                    </div>
+                  </div>
+                </td>
+                <td>$24.75</td>
+                <td>
+                  <div class="quantity">
+                    <button class="btn" onclick="decreaseQuantity()">-</button>
+                    <input type="number" id="quantityInput" value="1" />
+                    <button class="btn" onclick="increaseQuantity()">+</button>
+                  </div>
+                </td>
+                <td>$24.75</td>
+              </tr>
+              <tr>
+                <td class="border-bt-none name text-end border-top" colspan="3">
+                  SubTotal
+                </td>
+                <td class="border-bt-none name border-top">$101.16</td>
+              </tr>
+              <tr class="border-bt-none">
+                <td class="border-bt-none name text-end" colspan="3">Tax</td>
+                <td class="border-bt-none name">$5.68</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="name text-end">Total</td>
+                <td class="name">$106.84</td>
+              </tr>
+              <tr>
+                <td colspan="3"></td>
+                <td>
+                  <button class="checkout-button">Checkout</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="l-1">
+            <address>
+              <span class="address-footer">ADDRESS:</span>No.112, 21st
+              street,Bahan Township, Yangon, Myanmar
+            </address>
+            <p><span class="address-footer"> PHONE: </span> 09-5502346</p>
+            <p>
+              <span class="address-footer"> EMAIL: </span>ourplace2210@gmail.com
+            </p>
+          </div>
+          <div class="l-2">
+            <p class="text-center">CONNECT WITH US!</p>
+            <a href="https://www.facebook.com/">
+              <img
+                style="margin-right: 10px"
+                src="images/facebook.png"
+                width="30px"
+                height="30px"
+                alt="Crd Image"
+              /></a>
+              <a href="https://www.instagram.com/">
+              <img
+                style="margin-right: 10px"
+                src="images/instagram.png"
+                width="30px"
+                height="30px"
+                alt="Card Image"
+              /></a>
+              <a href="https://twitter.com/?lang=en">
+              <img
+                src="images/twitter.png"
+                width="30px"
+                height="30px"
+                alt="Card Image"
+              /></a>
+          </div>
+        </div>
+        <p class="text-center">Copyright © 2023 Our Place</p>
+      </div>
+    </footer>
+
+    <script>
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      };
+      let quantityInput = document.getElementById("quantityInput");
+
+      function increaseQuantity() {
+        let currentValue = parseInt(quantityInput.value);
+        quantityInput.value = currentValue + 1;
+      }
+
+      function decreaseQuantity() {
+        let currentValue = parseInt(quantityInput.value);
+        if (currentValue > 1) {
+          quantityInput.value = currentValue - 1;
+        }
+      }
+    </script>
+  </body>
+</html>

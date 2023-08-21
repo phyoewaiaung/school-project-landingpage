@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x" href="images/name.png" />
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="RCC.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="sticky">
+      <header>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="equipment.html" class="active">Equipment</a></li>
+            <li><a href="furniture.html">Furniture</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="review.html">Reviews</a></li>
+          </ul>
+        </nav>
+        <input class="search-bar" type="text" >
+        <img src="images/search.png" class="search-img" alt="">
+        <a href="basket.html"
+          ><img
+            class="shopping-cart"
+            src="images/shopping-cart.png"
+            width="40px"
+            height="40px"
+            alt=""
+        /></a>
+      </header>
+      <a href="#openModal">
+        <img class="login" src="images/login.png" width="40px" height="40px" />
+      </a>
+    </div>
+    <!-- modalDialog -->
+    <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+
+        <form action="#" method="post">
+          <h3 class="text-center">Login Form</h3>
+          <hr />
+          <br />
+          <div class="form-group">
+            <label for="username">Email:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <a href="#">Forget Password?</a>
+          <br /><br />
+          <div class="form-group">
+            <button type="submit">Login</button>
+          </div>
+          <p class="text-center">
+            Not yet a member?
+            <span class="color-create">Create An Account! </span>
+          </p>
+        </form>
+      </div>
+    </div>
+    <main class="bg">
+      <div class="equipment-container">
+        <h1 class="text-center animate__animated animate__fadeInLeft padding-t">
+          Welcome to Our Camping Equipment Catalog!
+        </h1>
+        <div class="catalog">
+          <div class="item">
+            <img height="200px" src="images/cat1.jpg" alt="Camping Tent" />
+            <h2>Camping Tent</h2>
+            <p>
+              Spacious and durable tent for your camping adventures. Sleeps up
+              to 4 people.
+            </p>
+            <hr />
+            <span class="price">$60.50</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img height="200px" src="images/cat2.jpg" alt="Camping Tent" />
+            <h2>Lighter</h2>
+            <p>
+              Our lighter is not only perfect for starting campfires but also
+              ideal for lighting up stoves, lanterns, candles, and more. It's a
+              must-have tool for all your outdoor lighting needs.
+            </p>
+            <hr />
+            <span class="price">$10.44</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img height="200px" src="images/Stove.jpg" alt="Camping Tent" />
+            <h2>Stove</h2>
+            <p>Easy to use and refillable gas.</p>
+            <hr />
+            <span class="price">$11.99</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img height="200px" src="images/HL.jpg" alt="Camping Tent" />
+            <h2>Headlamp</h2>
+            <p>Free your hand and discover thing clearly whith this.</p>
+            <hr />
+            <span class="price">$20.22</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img height="200px" src="images/cat5.jpg" alt="Camping Tent" />
+            <h2>Backpack</h2>
+            <p>Large capacity and you can put whatever you want for camping.</p>
+            <hr />
+            <span class="price">$50.29</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img height="200px" src="images/cat6.jpg" alt="Camping Tent" />
+            <h2>Sleeping Bed</h2>
+            <p>Stay warmly and discover the beauty of nature.</p>
+            <hr />
+            <span class="price">$48.22</span>
+            <button>Add to Cart</button>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30554.466601316908!2d96.13673567795!3d16.81105355677708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1eca8da00badf%3A0xddcffcdec96b413!2sBahan%20Township%2C%20Yangon!5e0!3m2!1sen!2smm!4v1690425909364!5m2!1sen!2smm"
+            class="map"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="l-1">
+            <address>
+              <span class="address-footer">ADDRESS:</span>No.112, 21st
+              street,Bahan Township, Yangon, Myanmar
+            </address>
+            <p><span class="address-footer"> PHONE: </span> 09-5502346</p>
+            <p>
+              <span class="address-footer"> EMAIL: </span>ourplace2210@gmail.com
+            </p>
+          </div>
+          <div class="l-2">
+            <p class="text-center">CONNECT WITH US!</p>
+            <a href="https://www.facebook.com/">
+              <img
+                style="margin-right: 10px"
+                src="images/facebook.png"
+                width="30px"
+                height="30px"
+                alt="Crd Image"
+            /></a>
+            <a href="https://www.instagram.com/">
+              <img
+                style="margin-right: 10px"
+                src="images/instagram.png"
+                width="30px"
+                height="30px"
+                alt="Card Image"
+            /></a>
+            <a href="https://twitter.com/?lang=en">
+              <img
+                src="images/twitter.png"
+                width="30px"
+                height="30px"
+                alt="Card Image"
+            /></a>
+          </div>
+        </div>
+        <p class="text-center">Copyright © 2023 Our Place</p>
+      </div>
+    </footer>
+    <script>
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>

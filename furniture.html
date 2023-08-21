@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x" href="images/name.png" />
+    <title>Retail Camping Company</title>
+    <link rel="stylesheet" href="RCC.css" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="sticky">
+      <header>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="furniture.html" class="active">Furniture</a></li>
+            <li><a href="offers.html">Offers</a></li>
+            <li><a href="review.html">Reviews</a></li>
+          </ul>
+        </nav>
+        <input class="search-bar" type="text" >
+        <img src="images/search.png" class="search-img" alt="">
+        <a href="basket.html"
+          ><img
+            class="shopping-cart"
+            src="images/shopping-cart.png"
+            width="40px"
+            height="40px"
+            alt=""
+        /></a>
+      </header>
+      <a href="#openModal">
+        <img class="login" src="images/login.png" width="40px" height="40px" />
+      </a>
+    </div>
+    <!-- modalDialog -->
+    <div id="openModal" class="modalDialog">
+      <div>
+        <a href="#close" title="Close" class="close">X</a>
+
+        <form action="#" method="post">
+          <h3 class="text-center">Login Form</h3>
+          <hr />
+          <br />
+          <div class="form-group">
+            <label for="username">Email:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <a href="#">Forget Password?</a>
+          <br /><br />
+          <div class="form-group">
+            <button type="submit">Login</button>
+          </div>
+          <p class="text-center">
+            Not yet a member?
+            <span class="color-create">Create An Account! </span>
+          </p>
+        </form>
+      </div>
+    </div>
+    <main class="bg">
+      <div class="equipment-container">
+        <h1 class="text-center animate__animated animate__fadeInLeft padding-t">
+          Welcome to Our Furniture Catalog!
+        </h1>
+        <div class="text-center">
+          <iframe
+          class="youtube-video"
+          src="https://www.youtube.com/embed/PH5EX9mH0WI"
+        >
+        </div>
+        </iframe>
+        <div class="catalog">
+          <div class="item">
+            <img
+              height="200px"
+              src="images/furniture1.jpg"
+              alt="Camping Tent"
+            />
+            <h2>Camping Chair</h2>
+            <p>
+              This product is demanding to be comfort and easy to carry while
+              camping.
+            </p>
+            <hr />
+            <span class="price">$14.99</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img
+              height="200px"
+              src="images/furniture2.jpg"
+              alt="Camping Tent"
+            />
+            <h2>Camping Sleeping Bed</h2>
+            <p>Rest comfortly and enjoy the nature.</p>
+            <hr />
+            <span class="price">$19.44</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img
+              height="200px"
+              src="images/furniture3.jpg"
+              alt="Camping Tent"
+            />
+            <h2>Camping Storage</h2>
+            <p>
+              Easy to setup and carry, and store things for our accessories.
+            </p>
+            <hr />
+            <span class="price">$16.99</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img height="200px" src="images/CHE.jpg" alt="Camping Tent" />
+            <h2>Camping Chair</h2>
+            <p>Comfort and easy to carry whenever u go camp.</p>
+            <hr />
+            <span class="price">$12.09</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img
+              height="200px"
+              src="images/furniture4.jpg"
+              alt="Camping Tent"
+            />
+            <h2>Camping Table</h2>
+            <p>Foldable and protable table and easy to use for going trip.</p>
+            <hr />
+            <span class="price">$18.33</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img
+              height="200px"
+              src="images/furniture5.jpg"
+              alt="Camping Tent"
+            />
+            <h2>Camping Table</h2>
+            <p>
+              Easy to carry when going trip and can carry whenever you go and
+              easy to maintain.
+            </p>
+            <hr />
+            <span class="price">$11.65</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img
+              height="200px"
+              src="images/furniture6.jpg"
+              alt="Camping Tent"
+            />
+            <h2>Camping Chair</h2>
+            <p>Feel the nature and spend time in on this chair peacefully.</p>
+            <hr />
+            <span class="price">$21.08</span>
+            <button>Add to Cart</button>
+          </div>
+          <div class="item">
+            <img
+              height="200px"
+              src="images/furniture7.jpg"
+              alt="Camping Tent"
+            />
+            <h2>Camping Foldable Chair</h2>
+            <p>
+              Enjoy the beauty of the nature with your family from this chair.
+            </p>
+            <hr />
+            <span class="price">$23.50</span>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-container">
+          <div class="l-1">
+            <address>
+              <span class="address-footer">ADDRESS:</span>No.112, 21st
+              street,Bahan Township, Yangon, Myanmar
+            </address>
+            <p><span class="address-footer"> PHONE: </span> 09-5502346</p>
+            <p>
+              <span class="address-footer"> EMAIL: </span>ourplace2210@gmail.com
+            </p>
+          </div>
+          <div class="l-2">
+            <p class="text-center">CONNECT WITH US!</p>
+            <a href="https://www.facebook.com/">
+              <img
+                style="margin-right: 10px"
+                src="images/facebook.png"
+                width="30px"
+                height="30px"
+                alt="Crd Image"
+            /></a>
+            <a href="https://www.instagram.com/">
+              <img
+                style="margin-right: 10px"
+                src="images/instagram.png"
+                width="30px"
+                height="30px"
+                alt="Card Image"
+            /></a>
+            <a href="https://twitter.com/?lang=en">
+              <img
+                src="images/twitter.png"
+                width="30px"
+                height="30px"
+                alt="Card Image"
+            /></a>
+          </div>
+        </div>
+        <p class="text-center">Copyright © 2023 Our Place</p>
+      </div>
+    </footer>
+
+    <script>
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navbar = document.querySelector(".navbar");
+        navbar.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
